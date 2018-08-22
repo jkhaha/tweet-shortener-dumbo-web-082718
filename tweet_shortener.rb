@@ -20,7 +20,7 @@ def word_substituter(string)
   array.each_with_index do |words, index|
     dictionary.keys.each do |x|
       if x == words
-        array[index] = dicationary[x]
+        array[index] = dictionary[x]
       end
     end
   end
@@ -29,7 +29,7 @@ end
 
 def bulk_tweet_shortener(array)
   array.each_with_index do |tweet, index|
-    tweet_array = tweet_split(" ")
+    tweet_array = tweet.split(" ")
     tweet_array.each_with_index do |word, index|
       dictionary.keys.each do |x|
         tweet_array[index] = dictionary[x]
