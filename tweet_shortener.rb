@@ -1,7 +1,7 @@
 # Write your code here.
 
 def dictionary
-  has = {
+  hash = {
     "Hello" => "hi",
     "to" => "2",
     "two" => "2",
